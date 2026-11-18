@@ -4,9 +4,9 @@
 
 FixMate connects customers with verified repair technicians. Technicians list services (smartphone, laptop, AC, refrigerator, TV, washing machine, electrical), customers send repair requests and follow every job step by step, and they **pay with Stripe only after the job is completed**. Admins approve listings, manage users and monitor revenue.
 
-- **Live site:** `https://YOUR-CLIENT.vercel.app`  ← replace after deploying
-- **Server repo:** `https://github.com/YOUR-USER/fixmate-server`
-- **API (production):** `https://YOUR-SERVER.vercel.app`
+- **Live site:** `https://fixmate-client-chi.vercel.app`
+- **Server repo:** `https://github.com/kazolroy/fixmate-server`
+- **API (production):** `https://fixmate-server-plum.vercel.app`
 
 ## Test accounts (created by `npm run seed`)
 
