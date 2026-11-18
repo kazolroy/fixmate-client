@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #ecf8fa;
+  --color-brand-100: #d3eef2;
+  --color-brand-200: #a8dde5;
+  --color-brand-300: #6cc3d0;
+  --color-brand-500: #148299;
+  --color-brand-600: #0f6a7e;
+  --color-brand-700: #0d5566;
+  --color-brand-800: #0c4452;
+  --color-brand-900: #08303b;
+  --color-brand-950: #051f27;
+
+  --color-accent-50: #fff3ea;
+  --color-accent-100: #ffe2cc;
+  --color-accent-400: #f98d4d;
+  --color-accent-500: #f26b21;
+  --color-accent-600: #dc5a13;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 font-sans text-slate-700 antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-brand-900;
+  }
+  button:not(:disabled),
+  [role='button'] {
+    cursor: pointer;
+  }
+}
+
+/* Blueprint grid used behind the hero and 404 illustration */
+.blueprint {
+  background-color: var(--color-brand-900);
+  background-image:
+    linear-gradient(rgba(168, 221, 229, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 221, 229, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes fm-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.fm-float {
+  animation: fm-float 5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fm-float {
+    animation: none;
+  }
+}
